@@ -20,15 +20,19 @@ body {
 /* Header */
 header {
     background-color: yellow;
+    width: 100%;
+    display: flex;
 }
 
 /* Main */
 main {
     background-color: aqua;
-    flex-grow: 1;
+    display: flex;
+    flex: 1 0;
 }
 
 /* Footer */
 footer {
     background-color: tomato;
+    display: flex;
 }
