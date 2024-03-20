@@ -32,7 +32,7 @@ header {
     position: fixed;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 14px #000000;
+    box-shadow: 0 1px 3px #000000;
 }
 
 header h1 {
@@ -62,7 +62,7 @@ header li {
 
 }
 
-header nav {
+nav {
     display: none;
 }
 
@@ -86,7 +86,7 @@ header nav {
     width: 24px;
     height: 24px;
 }
-
+/* Selector to change the color for the current page the user is on */
 .active {
     color: #6b9f66;
 }
@@ -154,7 +154,7 @@ main {
 footer {
     background-color: #0b1e00;
     display: flex;
-    box-shadow: 0 -1px 1px #042d15;
+    box-shadow: 0 -1px 3px #000000;
 }
 
 #social-media {
@@ -170,4 +170,71 @@ footer {
 footer a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Media query: devices of 768px and higher */
+@media screen and (min-width: 768px) {
+    /* Header 768px> */
+    header {
+        flex-direction: row;
+    }
+    header label {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 300%;
+        text-align: left;
+        padding-left: 10px;
+        letter-spacing: 2px;
+    }
+    /* Navigation bar 768px> */
+    nav {
+        padding: 0 10px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+
+    #nav-bar {
+        display: flex;
+        width: 100%;
+        font-size: 140%;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    
+    /* Main */
+    main {
+        margin-top: 63px;
+    }
+    /* Hero section */
+    #hero {
+        font-size: 146%;
+    }
+
+    #hero-text-container {
+        margin-bottom: 80px;
+    }
+
+    #hero-text-container div {
+        padding: 9px 6px;
+    }
+    /* Width of each individual div containing text */
+    #hero-text-1 {
+        width: 360px;
+    }
+    
+    #hero-text-2 {
+        width: 320px;
+    }
+
+    #hero-text-3 {
+        width: 280px;
+    }
+
+    #hero-text-4 {
+        width: 240px;
+    }
 }
