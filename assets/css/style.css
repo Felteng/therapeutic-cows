@@ -26,7 +26,10 @@ h1 {
 
 /* Header */
 header {
+    background-color: #31473A;
+    z-index: 10;
     width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     box-shadow: 0 1px 1px #042d15;
@@ -104,6 +107,7 @@ header nav {
 
 /* Main */
 main {
+    margin-top: 59px;
     display: flex;
     flex: 1 0;
 }
