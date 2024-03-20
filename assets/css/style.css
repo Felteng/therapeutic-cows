@@ -7,3 +7,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* General project styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: yellow;
+}
+
+/* Main */
+main {
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+/* Footer */
+footer {
+    background-color: tomato;
+}
