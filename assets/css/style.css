@@ -23,16 +23,18 @@ h1 {
     font-family: "Madimi One", sans-serif;
     letter-spacing: 1px;
 }
+
 /* Header */
 header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 1px 1px #042d15;
 }
 
 header h1 {
-    font-size: 165%;
-    margin-left: 1rem;
+    font-size: 180%;
+    text-align: center;
 }
 
 header a {
@@ -40,9 +42,64 @@ header a {
     color: inherit;
 }
 
+header li {
+    letter-spacing: 0.5px;
+}
+
+/* Navigation bar */
 #nav-bar {
     list-style-type: none;
-    margin-left: 1rem;
+    line-height: 25px;
+    font-size: 110%;
+    padding: 0 25%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+header nav {
+    display: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle-icon-down {
+    font-size: 145%;
+    margin-top: -4px;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+#nav-toggle-icon-up {
+    align-self: center;
+    font-size: 145%;
+    margin-top: -4px;
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+.active {
+    color: #6b9f66;
+}
+
+/* Toggles the navigation bar to allow for less clutter */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* Switches between a chevron-up / chevron-down depending on toggle state */
+#nav-toggle:checked~#nav-toggle-icon-down {
+    display: none;
+}
+
+#nav-toggle:checked~#nav-toggle-icon-up {
+    display: block;
 }
 
 /* Main */
@@ -53,6 +110,22 @@ main {
 
 /* Footer */
 footer {
-    background-color: tomato;
+    background-color: #0b1e00;
     display: flex;
+    box-shadow: 0 -1px 1px #042d15;
+}
+
+#social-media {
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    font-size: 200%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
