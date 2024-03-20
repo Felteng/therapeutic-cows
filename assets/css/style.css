@@ -116,6 +116,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    /* background image from: https://pexels.com */
     background: url("../images/cow-hero-image.jpg") no-repeat center center/cover;
     width: 100%;
     height: 540px;
@@ -123,14 +124,12 @@ main {
 
 #hero-text {
     line-height: 30px;
-    margin-bottom: 35px;
-    /* width: 250px; */
-    
+    margin-bottom: 50px;
 }
 
 #hero-text div {
     padding: 0px 3px;
-    margin-top: 3px;
+    margin-top: 5px;
     background-color: #433008cf;
     border-radius: 0px 9px 9px 0px;
 
