@@ -157,7 +157,7 @@ main {
     width: 140px;
 }
 
-/* Why cows can be therapy section */
+/* Why goood section */
 
 
 #reasons-container {
@@ -181,7 +181,7 @@ main {
     align-items: center;
     border-top: 1px solid #0b1e00;
 }
-/* Targeting all tex elements in the section */
+/* Targeting all text elements in the why good section */
 #why-good h2 {
     margin-top: 4px;
     text-align: center;
@@ -203,6 +203,16 @@ main {
     padding: 3px;
     font-size: 115%;
 
+}
+/* Map */
+#map-container {
+    height: 350px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #0b1e00;
 }
 
 /* Footer */
