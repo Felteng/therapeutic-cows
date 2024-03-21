@@ -19,7 +19,9 @@ body {
     color: #EDF4F2;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Madimi One", sans-serif;
     letter-spacing: 1px;
 }
@@ -86,6 +88,7 @@ nav {
     width: 24px;
     height: 24px;
 }
+
 /* Selector to change the color for the current page the user is on */
 .active {
     color: #6b9f66;
@@ -111,12 +114,14 @@ main {
     display: flex;
     flex: 1 0;
 }
+
 /* Hero section element */
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* background image from: https://pexels.com */
+    /*  Background image from: https://unsplash.com 
+        Captured by: Brian Taylor */
     background: url("../images/cow-hero-image.jpg") no-repeat center center/cover;
     width: 100%;
     height: 540px;
@@ -174,10 +179,12 @@ footer a {
 
 /* Media query: devices of 768px and higher */
 @media screen and (min-width: 768px) {
+
     /* Header 768px> */
     header {
         flex-direction: row;
     }
+
     header label {
         display: none;
     }
@@ -188,6 +195,7 @@ footer a {
         padding-left: 10px;
         letter-spacing: 2px;
     }
+
     /* Navigation bar 768px> */
     nav {
         padding: 0 10px;
@@ -204,11 +212,12 @@ footer a {
         padding: 0;
         justify-content: space-evenly;
     }
-    
+
     /* Main */
     main {
         margin-top: 63px;
     }
+
     /* Hero section */
     #hero {
         font-size: 146%;
@@ -221,11 +230,12 @@ footer a {
     #hero-text-container div {
         padding: 9px 6px;
     }
+
     /* Width of each individual div containing text */
     #hero-text-1 {
         width: 360px;
     }
-    
+
     #hero-text-2 {
         width: 320px;
     }
