@@ -245,8 +245,7 @@ footer p {
 }
 
 #gallery-container>div {
-    border-bottom: 1px solid #0b1e00;
-    width: 50%;
+    flex-basis: 50%;
     height: 50%;
 }
 
@@ -367,6 +366,11 @@ footer p {
     nav li:hover {
         color: #6b9f66;
     }
+    /* Gallery heading size increase */
+    #gallery h2 {
+        font-size: 250%;
+        letter-spacing: 2px;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -388,5 +392,10 @@ footer p {
 
     #why-good h3 {
         margin-left: 3rem;
+    }
+
+    /* Gallery scaling for largest screens */
+    #gallery-container>div {
+        flex-basis: 33.33%;
     }
 }
