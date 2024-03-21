@@ -237,9 +237,35 @@ footer p {
 }
 
 /* Gallery css */
+#gallery-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#gallery-container>div {
+    border-bottom: 1px solid #0b1e00;
+    width: 50%;
+    height: 50%;
+}
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0b1e00;
+}
+
 #gallery h2 {
     text-align: center;
+    font-size: 180%;
+
 }
+
+#gallery h3 {
+    text-align: center;
+}
+
 
 
 /* Media query: devices of 768px and higher */
