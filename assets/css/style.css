@@ -204,17 +204,6 @@ main {
     font-size: 115%;
 
 }
-/* Map */
-#map-container {
-    height: 350px;
-}
-
-#map {
-    height: 100%;
-    width: 100%;
-    border: 1px solid #0b1e00;
-}
-
 /* Footer */
 footer {
     background-color: #0b1e00;
