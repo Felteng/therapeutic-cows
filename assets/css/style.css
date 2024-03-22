@@ -259,6 +259,59 @@ footer p {
     text-align: center;
 }
 
+/* Booking page */
+#booking {
+    background: url("../images/booking-background.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+#booking h2 {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 200%;
+}
+
+#booking h3 {
+    text-align: center;
+    line-height: 2rem;
+}
+
+#booking strong {
+    text-decoration: underline;
+}
+
+#booking-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 110%;
+    height: 100vh;
+    background-color: #31473a7a;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field {
+    margin: 3px 0px 10px 0px;
+    height: 1.5rem;
+}
+
+#contact-choice {
+    border: 1px solid #0b1e00;
+}
+
+#button-submit {
+    align-self: flex-start;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 6rem;
+}
 
 
 /* Media query: devices of 768px and higher */
@@ -393,4 +446,5 @@ footer p {
     #gallery-container>div {
         flex-basis: 33.33%;
     }
+
 }

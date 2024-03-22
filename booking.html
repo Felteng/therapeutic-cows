@@ -40,7 +40,41 @@
     </header>
 
     <!-- Main -->
-    <main>Main placeholder</main>
+    <main>
+        <section id="booking">
+
+            <form action="https://formdump.codeinstitute.net" method="post" id="booking-form">
+
+                <h2>Book your visit!</h2>
+                <h3>Free of charge</h3>
+                <h3>Limited spots</h3>
+                <div id="input-container">
+                    <label for="full-name">Full Name</label>
+                    <input type="name" name="full_name" id="full-name" class="text-field">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email_address" id="email-address" class="text-field">
+                    <label for="telephone-number">Phone Number</label>
+                    <input type="tel" name="telephone_number" id="telephone-number" class="text-field">
+                </div>
+                <div id="contact-choice">
+                    <p>How should we contact you?</p>
+                    <div>
+                        <input type="radio" name="contact_choice" id="email" value="email" class="contact-choice">
+                        <label for="email">By email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contact_choice" id="phone" value="phone" class="contact-choice">
+                        <label for="phone">By phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contact_choice" id="both" value="email + phone" class="contact-choice">
+                        <label for="both">Both</label>                    
+                    </div>
+                </div>
+                <button type="submit" id="button-submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
