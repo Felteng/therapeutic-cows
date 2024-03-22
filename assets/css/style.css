@@ -163,20 +163,14 @@ main {
     flex-direction: column;
 }
 
-#reasons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#reasons-container-2 {
+.reasons-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* Targeting all divs within the 2 containers */
-#why-good>div>div {
+.reasons-container div {
     display: flex;
     margin: 7px 0px;
     width: 100%;
@@ -274,7 +268,7 @@ footer p {
     header {
         flex-direction: row;
     }
-
+    /* Hide the nav-bar toggling as there is enough space to fit everything in header */
     header label {
         display: none;
     }
@@ -366,6 +360,7 @@ footer p {
     nav li:hover {
         color: #6b9f66;
     }
+
     /* Gallery heading size increase */
     #gallery h2 {
         font-size: 250%;
