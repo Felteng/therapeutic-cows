@@ -9,7 +9,6 @@
 }
 
 /* General project styles */
-
 body {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@ body {
     background-color: #31473A;
     color: #EDF4F2;
 }
-
+/* Generic styles for different headings */
 h1,
 h2,
 h3 {
@@ -26,7 +25,7 @@ h3 {
     letter-spacing: 1px;
 }
 
-/* Header */
+/* Header styling */
 header {
     background-color: #0b1e00;
     z-index: 10;
@@ -51,7 +50,7 @@ header li {
     letter-spacing: 0.5px;
 }
 
-/* Navigation bar */
+/* Navigation bar styling */
 #nav-bar {
     list-style-type: none;
     line-height: 25px;
@@ -99,7 +98,7 @@ nav {
     display: block;
 }
 
-/* Switches between a chevron-up / chevron-down depending on toggle state */
+/* Switches between a chevron-up / chevron-down depending on navbar toggle state */
 #nav-toggle:checked~#nav-toggle-icon-down {
     display: none;
 }
@@ -108,7 +107,7 @@ nav {
     display: block;
 }
 
-/* Main */
+/* Main styling */
 main {
     margin-top: 58px;
     display: flex;
@@ -116,13 +115,11 @@ main {
     flex: 1 0;
 }
 
-/* Hero section element */
+/* Hero section styling */
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /*  Background image from: https://unsplash.com 
-        Captured by: Brian Taylor */
     background: url("../images/cow-hero-image.jpg") no-repeat center center/cover;
     width: 100%;
     height: 540px;
@@ -203,12 +200,12 @@ main {
 
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     background-color: #0b1e00;
     box-shadow: 0 -1px 3px #000000;
 }
-
+/* Social media links styling for footer */
 #social-media {
     padding: 4px;
     width: 100%;
@@ -230,7 +227,7 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Gallery css */
+/* Gallery page styling */
 #gallery-container {
     width: 100%;
     display: flex;
@@ -259,7 +256,7 @@ footer p {
     text-align: center;
 }
 
-/* Booking page */
+/* Booking page styling */
 #booking {
     background: url("../images/booking-background.jpg") no-repeat center center/cover;
     height: 100vh;
@@ -268,18 +265,23 @@ footer p {
 #booking h2 {
     text-align: center;
     line-height: 4rem;
-    font-size: 200%;
+    font-size: 180%;
 }
 
 #booking h3 {
     text-align: center;
     line-height: 2rem;
+    align-self: center;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 #booking strong {
     text-decoration: underline;
 }
-
+/* General styling for contact form */
 #booking-form {
     padding: 20px;
     display: flex;
@@ -295,22 +297,36 @@ footer p {
 #input-container {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .text-field {
     margin: 3px 0px 10px 0px;
     height: 1.5rem;
+    background-color: #00000033;
+    color: #ffffff;
 }
 
 #contact-choice {
-    border: 1px solid #0b1e00;
+    border: 1px solid #000000;
+    background-color: #00000033;
+    line-height: 35px;
 }
 
+.radio-choice {
+    min-height: 15px;
+    min-width: 15px;
+}
+/* Form submit button styling */
 #button-submit {
     align-self: flex-start;
     margin-top: 1rem;
     height: 2.5rem;
     width: 6rem;
+    color: #0b1e00;
+    background-color: #6b9f66;
+    border: 1px solid #0b1e00;
+    box-shadow: 0px 1px 1px;
 }
 
 
@@ -414,7 +430,6 @@ footer p {
         color: #6b9f66;
     }
 
-    /* Gallery heading size increase */
     #gallery h2 {
         font-size: 250%;
         letter-spacing: 2px;
@@ -447,4 +462,13 @@ footer p {
         flex-basis: 33.33%;
     }
 
+    /* Booking page largest screens */
+    #booking h2 {
+
+        font-size: 220%;
+    }
+    
+    #booking h3 {
+        font-size: 160%;
+    }
 }

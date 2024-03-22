@@ -24,6 +24,7 @@
         <a href="index.html">
             <h1>Therapeutic Cows</h1>
         </a>
+        <!-- Nav-bar -->
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <label for="nav-toggle" id="nav-toggle-icon-down"><i class="fa-solid fa-chevron-down"
                 aria-label="Arrow down to show the navigation menu"></i></label>
@@ -47,27 +48,27 @@
 
                 <h2>Book your visit!</h2>
                 <h3>Free of charge</h3>
-                <h3>Limited spots</h3>
+                <h3 class="underline">Limited spots</h3>
                 <div id="input-container">
                     <label for="full-name">Full Name</label>
-                    <input type="name" name="full_name" id="full-name" class="text-field">
+                    <input type="name" name="full_name" id="full-name" class="text-field" required>
                     <label for="email-address">Email Address</label>
-                    <input type="email" name="email_address" id="email-address" class="text-field">
+                    <input type="email" name="email_address" id="email-address" class="text-field" required>
                     <label for="telephone-number">Phone Number</label>
-                    <input type="tel" name="telephone_number" id="telephone-number" class="text-field">
+                    <input type="tel" name="telephone_number" id="telephone-number" class="text-field" required>
                 </div>
                 <div id="contact-choice">
                     <p>How should we contact you?</p>
                     <div>
-                        <input type="radio" name="contact_choice" id="email" value="email" class="contact-choice">
+                        <input type="radio" name="contact_choice" id="email" value="email" class="radio-choice" required>
                         <label for="email">By email</label>
                     </div>
                     <div>
-                        <input type="radio" name="contact_choice" id="phone" value="phone" class="contact-choice">
+                        <input type="radio" name="contact_choice" id="phone" value="phone" class="radio-choice" required>
                         <label for="phone">By phone</label>
                     </div>
                     <div>
-                        <input type="radio" name="contact_choice" id="both" value="email + phone" class="contact-choice">
+                        <input type="radio" name="contact_choice" id="both" value="email + phone" class="radio-choice" required>
                         <label for="both">Both</label>                    
                     </div>
                 </div>
