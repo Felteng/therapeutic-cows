@@ -333,6 +333,10 @@ footer p {
     border: 1px solid #0b1e00;
     box-shadow: 0px 1px 1px;
 }
+/* Highlight hovering of the submit button */
+#button-submit:hover {
+    background-color: #174213;
+}
 
 
 /* Media query: devices of 768px and higher */
