@@ -20,7 +20,8 @@ body {
 /* Generic styles for different headings */
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: "Madimi One", sans-serif;
     letter-spacing: 1px;
 }
@@ -152,6 +153,10 @@ main {
 
 #hero-text-4 {
     width: 140px;
+}
+
+#hero-location-text {
+    width: 100px;
 }
 
 /* Why goood section */
@@ -399,6 +404,10 @@ footer p {
 
     #hero-text-4 {
         width: 240px;
+    }
+
+    #hero-location-text {
+        width: 200px;
     }
 
     /* Why good section for 768px> */
