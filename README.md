@@ -71,6 +71,7 @@ The user will be presented with information as to why the activity could be of c
 
 - I have tested the project's responsiveness and fucntions across all standard screen sizes and breakpoints using Chromes devtools. Which includes:
     - All page navigation buttons taking the user to the intended page.
+        - Navigation bar toggling works as intended for mobile devices.
     
     - The form requiring input in every field and prompting the user with a successful form submission.
         - During this I discovered the input type for the full name field was bad.
