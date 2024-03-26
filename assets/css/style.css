@@ -266,16 +266,19 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     font-size: 110%;
-    min-height: 100vh;
     align-content: center;
 }
 
 #booking-bg-image {
     background: url("../images/booking-background.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 #booking-bg-color {
     background-color: #31473a7a;
+    flex-grow: 1;
 }
 
 .booking-h2 {
