@@ -79,10 +79,43 @@ The user will be presented with information as to why the activity could be of c
 ### Test Cases
 
 - Index
+    - Open the index homepage
+        - Expected output: Be shown page header with "Home" highlighted in green, hero image, and text content.
+        - Actual output: Page header with "Home" highlighted in green, hero image, and text content displayed when opened.
+    
+    - Click main heading on page header
+        - Expected output: Have index page refreshed as it opens again.
+        - Actual output: Index page was refreshed.
 
+    - Click the highlighted "Home" button on nav-bar.
+        - Expected output: Have index page refreshed as it opens again.
+        - Actual output: Index page was refreshed.
+
+    - Click the "Cows" button on nav-bar.
+        - Expected output: Get directed to the cow-gallery page.
+        - Actual output: Get directed to the cow-gallery page.
+    
+    - Click the "Booking" button on nav-bar.
+        - Expected output: Get directed to the booking page.
+        - Actual output: Get directed to the booking page.
+
+    - Scroll down the page.
+        - Expected output: Find the page footer with social media links under the main page content.
+        - Actual output: Footer found at the bottom of the page with our 4 social media links.
+
+    - Click each social media icon at the page footer.
+        - Expected output: Each icon should open a new page leading the user to each corresponding social media platform.
+        - Actual result: Each icon opened a new tab when clicked and led to the platform associated with the icon. \
+
+    ![Image of the whole index page](readme-assets/images/index-capture.png "Image of the index page")
 - Gallery
+    - 
 
 - Booking
+    -
+
+- Confirmation
+    -
 
 ### Bugs
 
