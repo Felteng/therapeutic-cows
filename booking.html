@@ -20,19 +20,19 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="page-header">
         <a href="index.html">
             <h1>Therapeutic Cows</h1>
         </a>
         <!-- Nav-bar -->
-        <input type="checkbox" name="nav-toggle" id="nav-toggle">
+        <input type="checkbox" id="navigation" class="nav-toggle">
         <!-- Aria-labels for the dropdown icon -->
-        <label for="nav-toggle" id="nav-toggle-icon-down"><i class="fa-solid fa-chevron-down"
+        <label for="navigation" class="nav-toggle-icon-down"><i class="fa-solid fa-chevron-down"
                 aria-label="Arrow down to show the navigation menu"></i></label>
-        <label for="nav-toggle" id="nav-toggle-icon-up"><i class="fa-solid fa-chevron-up"
+        <label for="navigation" class="nav-toggle-icon-up"><i class="fa-solid fa-chevron-up"
                 aria-label="Arrow up to hide the navigation menu again"></i></label>
-        <nav>
-            <ul id="nav-bar">
+        <nav class="header-nav">
+            <ul class="header-nav-bar">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="cow-gallery.html"><i class="fa-regular fa-images"></i> Cows</a></li>
                 <li><a href="booking.html" class="active"><i class="fa-solid fa-square-check"></i> Booking</a></li>
@@ -45,11 +45,11 @@
     <main>
         <section id="booking">
             <div id="booking-background">
-                <form action="https://formdump.codeinstitute.net" method="post" id="booking-form">
-                    <h2>Book your visit!</h2>
-                    <h3>Free of charge</h3>
-                    <h3 class="underline">Limited spots</h3>
-                    <div id="input-container">
+                <form action="https://formdump.codeinstitute.net" method="post" class="booking-form">
+                    <h2 class="booking-h2">Book your visit!</h2>
+                    <h3 class="booking-h3">Free of charge</h3>
+                    <h3 class="underline booking-h3">Limited spots</h3>
+                    <div class="input-container">
                         <label for="full-name">Full Name</label>
                         <input type="text" name="full_name" id="full-name" class="text-field" required>
                         <label for="email-address">Email Address</label>
@@ -57,7 +57,7 @@
                         <label for="telephone-number">Phone Number</label>
                         <input type="tel" name="telephone_number" id="telephone-number" class="text-field" required>
                     </div>
-                    <div id="contact-choice">
+                    <div class="contact-choice">
                         <p>How should we contact you?</p>
                         <div>
                             <input type="radio" name="contact_choice" id="email" value="email" class="radio-choice"
@@ -75,7 +75,7 @@
                             <label for="both">Both</label>
                         </div>
                     </div>
-                    <button type="submit" id="button-submit">Submit</button>
+                    <button type="submit" class="button-submit">Submit</button>
                 </form>
             </div>
         </section>
@@ -84,7 +84,7 @@
     <!-- Footer -->
     <footer>
         <!-- Social media hyperlinks -->
-        <ul id="social-media">
+        <ul class="social-media">
             <li><a href="https://tiktok.com" rel="noopener" target="_blank"
                     aria-label="Visit our Facebook page (the link opens in a new page)"><i
                         class="fa-brands fa-tiktok"></i></a></li>
@@ -98,7 +98,7 @@
                     aria-label="Visit our Facebook page (the link opens in a new page)"><i
                         class="fa-brands fa-facebook"></i></a></li>
         </ul>
-        <p>Therapeutic Cows @ 2024</p>
+        <p class="footer-p">Therapeutic Cows @ 2024</p>
     </footer>
     <!-- Font Awesome kit import -->
     <script src="https://kit.fontawesome.com/267fdd4ac7.js" crossorigin="anonymous"></script>

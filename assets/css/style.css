@@ -17,6 +17,12 @@ body {
     background-color: #31473A;
     color: #EDF4F2;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Generic styles for different headings */
 h1,
 h2,
@@ -27,7 +33,7 @@ h4 {
 }
 
 /* Header styling */
-header {
+.page-header {
     background-color: #0b1e00;
     z-index: 10;
     width: 100%;
@@ -37,22 +43,17 @@ header {
     box-shadow: 0 1px 3px #000000;
 }
 
-header h1 {
+.page-header h1 {
     font-size: 180%;
     text-align: center;
 }
 
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-header li {
+.page-header li {
     letter-spacing: 0.5px;
 }
 
 /* Navigation bar styling */
-#nav-bar {
+.header-nav-bar {
     list-style-type: none;
     line-height: 25px;
     font-size: 110%;
@@ -64,15 +65,15 @@ header li {
 
 }
 
-nav {
+.header-nav {
     display: none;
 }
 
-#nav-toggle {
+.nav-toggle {
     display: none;
 }
 
-#nav-toggle-icon-down {
+.nav-toggle-icon-down {
     font-size: 145%;
     margin-top: -4px;
     width: 24px;
@@ -80,7 +81,7 @@ nav {
     align-self: center;
 }
 
-#nav-toggle-icon-up {
+.nav-toggle-icon-up {
     align-self: center;
     font-size: 145%;
     margin-top: -4px;
@@ -95,16 +96,17 @@ nav {
 }
 
 /* Toggles the navigation bar to allow for less clutter */
-#nav-toggle:checked~nav {
-    display: block;
+.nav-toggle:checked~nav {
+    display: flex;
+    justify-content: center;
 }
 
 /* Switches between a chevron-up / chevron-down depending on navbar toggle state */
-#nav-toggle:checked~#nav-toggle-icon-down {
+.nav-toggle:checked~.nav-toggle-icon-down {
     display: none;
 }
 
-#nav-toggle:checked~#nav-toggle-icon-up {
+.nav-toggle:checked~.nav-toggle-icon-up {
     display: block;
 }
 
@@ -117,7 +119,7 @@ main {
 }
 
 /* Hero section styling */
-#hero {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -127,40 +129,40 @@ main {
     box-shadow: 0px 0px 4px #000000;
 }
 
-#hero-text-container {
+.hero-text-container {
     line-height: 30px;
     margin-bottom: 50px;
 }
 
-#hero-text-container div {
+.hero-text-container div {
     padding: 0px 3px;
     margin-top: 5px;
     background-color: #433008cf;
     border-radius: 0px 9px 9px 0px;
 }
 
-#hero-text-1 {
+.hero-text-1 {
     width: 260px;
 }
 
-#hero-text-2 {
+.hero-text-2 {
     width: 220px;
 }
 
-#hero-text-3 {
+.hero-text-3 {
     width: 180px;
 }
 
-#hero-text-4 {
+.hero-text-4 {
     width: 140px;
 }
 
-#hero-location-text {
+.hero-location-text {
     width: 100px;
 }
 
 /* Why goood section */
-#why-good {
+.why-good {
     display: flex;
     flex-direction: column;
 }
@@ -171,8 +173,8 @@ main {
     align-items: center;
 }
 
-/* Targeting all divs within the 2 containers */
-.reasons-container div {
+/* Styling the text and content divs */
+.reasons-content {
     display: flex;
     margin: 7px 0px;
     width: 100%;
@@ -182,26 +184,23 @@ main {
 }
 
 /* Targeting all text elements in the why good section */
-#why-good h2 {
+.why-good-h2 {
     margin-top: 4px;
     text-align: center;
     font-size: 160%;
 }
 
 
-#why-good h3 {
+.why-good-h3 {
     margin-right: 1rem;
     margin-left: 0.5rem;
     font-size: 120%;
     min-width: 86px;
-    max-width: 86px;
     text-align: center;
-
 }
 
-#why-good p {
+.why-good p {
     padding-right: 4px;
-
 }
 
 /* Footer styling */
@@ -209,8 +208,9 @@ footer {
     background-color: #0b1e00;
     box-shadow: 0 -1px 3px #000000;
 }
+
 /* Social media links styling for footer */
-#social-media {
+.social-media {
     padding: 4px;
     width: 100%;
     display: flex;
@@ -219,12 +219,7 @@ footer {
     justify-content: space-evenly;
 }
 
-footer a {
-    text-decoration: none;
-    color: inherit;
-}
-
-footer p {
+.footer-p {
     font-family: sans-serif;
     font-size: 55%;
     text-align: center;
@@ -232,14 +227,13 @@ footer p {
 }
 
 /* Gallery page styling */
-#gallery-container {
-    /* width: 100%; */
+.gallery-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#gallery-container>div {
+.gallery-container>div {
     flex-basis: 100%;
     height: 50%;
 }
@@ -265,13 +259,13 @@ footer p {
     background: url("../images/booking-background.jpg") no-repeat center center/cover;
 }
 
-#booking h2 {
+.booking-h2 {
     text-align: center;
     line-height: 4rem;
     font-size: 180%;
 }
 
-#booking h3 {
+.booking-h3 {
     text-align: center;
     line-height: 2rem;
     align-self: center;
@@ -281,11 +275,8 @@ footer p {
     text-decoration: underline;
 }
 
-#booking strong {
-    text-decoration: underline;
-}
 /* General styling for contact form */
-#booking-form {
+.booking-form {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -297,7 +288,7 @@ footer p {
     min-height: 100vh;
 }
 
-#input-container {
+.input-container {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -310,7 +301,7 @@ footer p {
     color: #ffffff;
 }
 
-#contact-choice {
+.contact-choice {
     border: 1px solid #000000;
     background-color: #00000033;
     line-height: 35px;
@@ -320,8 +311,9 @@ footer p {
     min-height: 15px;
     min-width: 15px;
 }
+
 /* Form submit button styling */
-#button-submit {
+.button-submit {
     align-self: flex-start;
     margin-top: 1rem;
     height: 2.5rem;
@@ -331,8 +323,9 @@ footer p {
     border: 1px solid #0b1e00;
     box-shadow: 0px 1px 1px;
 }
+
 /* Highlight hovering of the submit button */
-#button-submit:hover {
+.button-submit:hover {
     background-color: #174213;
 }
 
@@ -341,15 +334,16 @@ footer p {
 @media screen and (min-width: 768px) {
 
     /* Header 768px> */
-    header {
+    .page-header {
         flex-direction: row;
     }
+
     /* Hide the nav-bar toggling as there is enough space to fit everything in header */
-    header label {
+    .page-header label {
         display: none;
     }
 
-    header h1 {
+    .page-header h1 {
         font-size: 300%;
         text-align: left;
         padding-left: 10px;
@@ -357,14 +351,14 @@ footer p {
     }
 
     /* Navigation bar 768px> */
-    nav {
+    .header-nav {
         padding: 0 10px;
         display: flex;
         flex-grow: 1;
         justify-content: space-evenly;
     }
 
-    #nav-bar {
+    .header-nav-bar {
         display: flex;
         width: 100%;
         font-size: 140%;
@@ -373,62 +367,59 @@ footer p {
         justify-content: space-evenly;
     }
 
-    /* Main */
+    /* Main 768px> */
     main {
         margin-top: 63px;
     }
 
-    /* Hero section */
-    #hero {
+    /* Hero section 768px> */
+    .hero-text-container {
+        margin-bottom: 80px;
         font-size: 146%;
     }
 
-    #hero-text-container {
-        margin-bottom: 80px;
-    }
-
-    #hero-text-container div {
+    .hero-text-container div {
         padding: 9px 6px;
     }
 
     /* Width of each individual div containing text */
-    #hero-text-1 {
+    .hero-text-1 {
         width: 360px;
     }
 
-    #hero-text-2 {
+    .hero-text-2 {
         width: 320px;
     }
 
-    #hero-text-3 {
+    .hero-text-3 {
         width: 280px;
     }
 
-    #hero-text-4 {
+    .hero-text-4 {
         width: 240px;
     }
 
-    #hero-location-text {
+    .hero-location-text {
         width: 200px;
     }
 
     /* Why good section for 768px> */
     /* Stacks the 2 containers next to each other for bigger than mobile devices */
-    #why-good {
+    .why-good {
         flex-direction: row;
     }
 
-    #why-good h2 {
+    .why-good-h2 {
         font-size: 200%;
     }
 
-    #why-good h3 {
+    .why-good-h3 {
         font-size: 135%;
         margin-right: 2rem;
     }
 
-    /* Gallery using 2 columns on tablets and larger */
-    #gallery-container>div {
+    /* Gallery using 2 columns on 768px> */
+    .gallery-container>div {
         flex-basis: 50%;
     }
 }
@@ -437,16 +428,16 @@ footer p {
 /* Media query: devices of 1024px and higher */
 @media screen and (min-width:1024px) {
 
-    /* Why good section */
-    #why-good p {
+    /* Why good section 1024px> */
+    .why-good p {
         font-size: 125%;
     }
 
     /* Highlight effect on hovering nav-bar items for laptops and larger */
-    nav li:hover {
+    .header-nav li:hover {
         color: #6b9f66;
     }
-
+    /* Gallery 1024px */
     #gallery h2 {
         font-size: 250%;
         letter-spacing: 2px;
@@ -455,36 +446,36 @@ footer p {
 
 @media screen and (min-width:1200px) {
 
-    /* Large screen header */
-    header h1 {
+    /* Header 1200px> */
+    .page-header h1 {
         font-size: 350%;
     }
-
+    /* Main 1200px> */
     main {
         margin-top: 74px;
     }
 
-    /* Why good section for largest screens */
-    #why-good p {
+    /* Why good section 1200px */
+    .why-good p {
         font-size: 140%;
         padding-right: 3rem;
     }
 
-    #why-good h3 {
+    .why-good-h3 {
         margin-left: 3rem;
     }
 
-    /* Gallery using 3 columns for largest screens */
-    #gallery-container>div {
+    /* Gallery using 3 columns for 1200px> */
+    .gallery-container>div {
         flex-basis: 33.33%;
     }
 
-    /* Booking page largest screens */
+    /* Booking page 1200px> */
     #booking h2 {
 
         font-size: 220%;
     }
-    
+
     #booking h3 {
         font-size: 160%;
     }
