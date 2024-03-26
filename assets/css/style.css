@@ -350,8 +350,9 @@ footer {
         flex-direction: row;
     }
 
-    /* Hide the nav-bar toggling as there is enough space to fit everything in header */
-    .page-header label {
+    /* Hide the nav-bar toggling as there is enough space to fit everything in header */ 
+    .nav-toggle:checked~.nav-toggle-icon-up, 
+    .nav-toggle-icon-down {
         display: none;
     }
 
