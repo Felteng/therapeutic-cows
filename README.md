@@ -93,7 +93,7 @@ The user will be presented with information as to why the activity could be of c
 - I noticed that on very low-height displays the Booking form would displace itself and sit up to the right of the form, off the screen.
     - I troubleshot using devtools and discovered that it was the "height: 100vh" on the form element making it unable to handle overflow.\
     ![Image of overflow bug in booking form](readme-assets/images/booking-bug.png "Image of the bug on the form")
-    - Nesting the form inside a div for the background image and changing the height property to "min-height: 100vh" fixed the bug.
+    - Nesting the form inside a div for the background color and adding a flex grow property to the section fixed the bug.
 
 - Closing tags were found outside of their parent in navbar. \
 `<li><a href="index.html"><i class="fa-solid fa-house"></i> Home</li></a>`
