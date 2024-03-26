@@ -109,7 +109,35 @@ The user will be presented with information as to why the activity could be of c
 
     ![Image of the whole index page](readme-assets/images/index-capture.png "Image of the index page")
 - Gallery
-    - 
+    - Open the gallery page.
+        - Expected output: See the page header with "Cows" highlighted in green, along with headings, and images of the cows.
+        - Actual result: Page header with "Cows" highlighted in green, headings, and pictures of the cows shown.
+
+    - Click main heading on page header
+        - Expected output: Get directed to the index page.
+        - Actual output: Directed to the index page.
+
+    - Click the highlighted "Home" button on nav-bar.
+        - Expected output: Get directed to the index page.
+        - Actual output: Directed to the index page.
+
+    - Click the "Cows" button on nav-bar.
+        - Expected output: Have the current page refreshed as it gets directed to again.
+        - Actual output: Gallery page was refreshed.
+    
+    - Click the "Booking" button on nav-bar.
+        - Expected output: Get directed to the booking page.
+        - Actual output: Get directed to the booking page.
+
+    - Scroll down the page.
+        - Expected output: Find the page footer with social media links under the main page content.
+        - Actual output: Footer found at the bottom of the page with our 4 social media links.
+
+    - Click each social media icon at the page footer.
+        - Expected output: Each icon should open a new page leading the user to each corresponding social media platform.
+        - Actual result: Each icon opened a new tab when clicked and led to the platform associated with the icon. \
+    
+    ![Image of the cow gallery page](readme-assets/images/cow-gallery-capture.png "Image of the cow gallery page and footer")
 
 - Booking
     -
