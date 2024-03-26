@@ -197,6 +197,10 @@ main {
     font-size: 120%;
     min-width: 86px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .why-good p {
