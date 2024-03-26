@@ -78,6 +78,12 @@ The user will be presented with information as to why the activity could be of c
 
 ### Test Cases
 
+- Index
+
+- Gallery
+
+- Booking
+
 ### Bugs
 
 #### Current and unfixed bugs
@@ -117,7 +123,11 @@ The user will be presented with information as to why the activity could be of c
 Website live link: [Therapeutic Cows](https://felteng.github.io/therapeutic-cows/)
 
 ### Local
-
+- For coding purposes the site was also deployed locally:
+    - In your IDE, open a terminal.
+    - In the terminal enter: "python3 -m http.server" and hit enter.
+    - Click Open Browser on the pop up window that appears on your screen.
+        - Optionally click Open Preview to open a preview in your IDE.
 
 ## Credits
 
