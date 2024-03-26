@@ -347,6 +347,19 @@ footer {
     background-color: #174213;
 }
 
+/* Confirmation page */
+.congratulations {
+    font-size: 215%;
+    text-align: center;
+    margin-top: 30vh;
+    padding: 8px;
+}
+
+.info-received {
+    font-size: 140%;
+    text-align: center;
+    padding: 8px;
+}
 
 /* Media query: devices of 768px and higher */
 @media screen and (min-width: 768px) {
@@ -442,13 +455,17 @@ footer {
         flex-basis: 50%;
     }
 
-    /* Booking page sizing 768px> */
+    /* Booking page 768px> */
     .booking-h2 {
         font-size: 245%;
     }
     
     .booking-h3 {
         font-size: 185%;
+    }
+    /* Confirmation page 768px> */
+    .congratulations {
+        font-size: 355%;
     }
 }
 
@@ -507,5 +524,13 @@ footer {
     .booking-h3 {
         font-size: 200%;
         line-height: 3rem;
+    }
+    /* Confirmation page 1200px> */
+    .congratulations {
+        font-size: 470%;
+    }
+
+    .info-received {
+        font-size: 210%;
     }
 }
