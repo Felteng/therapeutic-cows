@@ -102,7 +102,6 @@ The user will be presented with information as to why the activity could be of c
 ### Validation
 - HTML
     - No errors returned on any of the pages through the official W3C validator.
-    - Warnings were displayed for "Possible misuse of aria-label" for the nav-bar toggle icons. I deemed them necessary to have there for a screen-reader to detect.
 - CSS
     - No errors found after CSS was ran through the official W3C jigsaw validator.
 - Accessibility
