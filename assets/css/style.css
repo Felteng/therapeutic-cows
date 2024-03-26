@@ -266,13 +266,16 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     font-size: 110%;
-    background-color: #31473a7a;
     min-height: 100vh;
     align-content: center;
 }
 
-#booking-background {
+#booking-bg-image {
     background: url("../images/booking-background.jpg") no-repeat center center/cover;
+}
+
+#booking-bg-color {
+    background-color: #31473a7a;
 }
 
 .booking-h2 {
@@ -435,6 +438,15 @@ footer {
     .gallery-container>div {
         flex-basis: 50%;
     }
+
+    /* Booking page sizing 768px> */
+    .booking-h2 {
+        font-size: 245%;
+    }
+    
+    .booking-h3 {
+        font-size: 185%;
+    }
 }
 
 
@@ -484,12 +496,13 @@ footer {
     }
 
     /* Booking page 1200px> */
-    #booking h2 {
+    .booking-h2 {
 
-        font-size: 220%;
+        font-size: 290%;
     }
 
-    #booking h3 {
-        font-size: 160%;
+    .booking-h3 {
+        font-size: 200%;
+        line-height: 3rem;
     }
 }
