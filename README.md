@@ -60,7 +60,7 @@ The user will be presented with information as to why the activity could be of c
 
 
 - **Features to implement in the future**
-    - Automatic confirmation message for sign ups.
+    - Automatic confirmation message/email notification for sign ups.
     - Lay groundwork for implementation of a payment system in case it'd be necessary to change that model. 
 
 ## Technologies
