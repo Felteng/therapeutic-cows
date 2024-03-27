@@ -99,11 +99,11 @@ The user will be presented with information as to why the activity could be of c
 ### Test Cases
 
 - Index
-    - Open the index homepage
+    - Open the index homepage.
         - Expected output: Be shown page header with "Home" highlighted in green, hero image, and text content.
         - Actual output: Page header with "Home" highlighted in green, hero image, and text content displayed when opened.
     
-    - Click main heading on page header
+    - Click main heading on page header.
         - Expected output: Have index page refreshed as it opens again.
         - Actual output: Index page was refreshed.
 
@@ -132,7 +132,7 @@ The user will be presented with information as to why the activity could be of c
         - Expected output: See the page header with "Cows" highlighted in green, along with headings, and images of the cows.
         - Actual result: Page header with "Cows" highlighted in green, headings, and pictures of the cows shown.
 
-    - Click main heading on page header
+    - Click main heading on page header.
         - Expected output: Get directed to the index page.
         - Actual output: Directed to the index page.
 
@@ -162,7 +162,7 @@ The user will be presented with information as to why the activity could be of c
         - Expected output: See the page header with "Booking" highlighted in green, page footer, a background image of a field, and the booking form with headings above.
         - Acutal output: Page header with "Booking" highlighted in green, page footer, background image of a field, and booking form with headings above displayed.
     
-    - Click main heading on page header
+    - Click main heading on page header.
         - Expected output: Get directed to the index page.
         - Actual output: Directed to the index page.
 
@@ -212,7 +212,7 @@ The user will be presented with information as to why the activity could be of c
         - Expected result: User will see page header with nothing highlighted on nav-bar, page footer, the same background from the booking page, and a congratulations message.
         - Actual result: User shown the page header with no highlight, page footer, the same background from the booking page, and a big congratulations message.
 
-    Click main heading on page header
+    - Click main heading on page header.
         - Expected output: Get directed to the index page.
         - Actual output: Directed to the index page.
 
