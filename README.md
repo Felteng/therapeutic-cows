@@ -3,7 +3,20 @@ The Theraputic Cows website is place for anyone who might be looking for a natur
 
 The user will be presented with information as to why the activity could be of consideration and what benefits it may present. It should also give a brief overview as to what one could expect from it. 
 
-![Capture of the homepage on different devices and screen sizes](readme-assets/images/am-i-responsive.png "Website homepage")
+![Image of the homepage on different devices and screen sizes](readme-assets/images/am-i-responsive.png "Website homepage")
+
+## User stories
+- Index
+    - As a visiting user, I would like to get to know more about Therapeutic Cows and what they offer.
+
+- Gallery
+    - As a visiting user, I would like to see more images of the cows mentioned on the homepage.
+
+- Booking
+    - As a visting user, I would like to give Therapeutic Cows my contact information and make a booking for the event.
+
+- Confirmation
+    - As a visting user, I would like to get a confirmation that I have properly filled out the booking form.
 
 ## Features
 - **Color and contrast**
